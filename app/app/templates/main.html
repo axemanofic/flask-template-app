@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://flask.palletsprojects.com/en/2.0.x/_static/flask-icon.png">
+    <title>Flask-app</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+        * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        font-size: 25px;
+        font-family: 'EB Garamond', serif;
+        }
+
+        ul li {
+        list-style: none;
+        }
+
+        a {
+        text-decoration: underline;
+        }
+
+        a:hover {
+        color: #215029;
+        text-decoration: none;
+        }
+
+        a, div, h1, h2, h3, h4, h5, h6 {
+        color: white;
+        }
+
+        body {
+        width: 100vw;
+        height: 100vh;
+        }
+
+        .container {
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        }
+
+        .wrapper {
+        min-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        }
+
+        .wrapper .header {
+        background-color: #0f0f0f;
+        }
+
+        .wrapper .header .nav {
+        height: 50px;
+        }
+
+        .wrapper .header .nav ul {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        }
+
+        .wrapper .header .nav ul li {
+        height: 100%;
+        }
+
+        .wrapper .header .nav ul li a {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        }
+
+        .wrapper .main {
+        width: 100%;
+        height: 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+        }
+
+        .wrapper .main .container .block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin: 0 auto;
+        height: 100%;
+        }
+
+        .wrapper .main .container .block .content {
+        height: 250px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        }
+
+        .wrapper .main .container .block .content img {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        }
+
+        .wrapper .main .container .block .content h1 {
+        margin: 15px 0;
+        text-align: center;
+        color: #0f0f0f;
+        }
+
+        .wrapper .footer {
+        width: 100%;
+        height: 35px;
+        background-color: #0f0f0f;
+        }
+
+        .wrapper .footer .container {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        }
+
+        .wrapper .footer .container .block {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        }
+        /*# sourceMappingURL=style.css.map */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav container">
+                <ul>
+                    <li><a href="https://flask.palletsprojects.com/en/2.0.x/">Documentation</a></li>
+                    <li><a href="https://flask-russian-docs.readthedocs.io/ru/latest/quickstart.html">Russian Documentation</a></li>
+                    <li><a href="https://pypi.org/project/Flask/">PyPi</a></li>
+                    <li><a href="https://github.com/pallets/flask/">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="block">
+                    <div class="content">
+                        <img src="https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png" alt="">
+                        <h1>Congratulations! <br> You have successfully launched your Flask application!</h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="block">
+                    create by <a href="https://github.com/axemanofic">axeman</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
