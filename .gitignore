@@ -9,3 +9,7 @@ gen
 
 venv
 design
+
+__pycache__/
+*.py[cod]
+*$py.class
